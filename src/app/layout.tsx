@@ -1,5 +1,6 @@
+// src/app/layout.tsx
 import "./globals.css";
-import { ThemeProvider } from "../app/Components/ThemeProvider";
+import Header from "../app/Components/Header";
 
 export const metadata = {
   title: "My Portfolio",
@@ -13,8 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
+        <Header />
+        <main className="p-4">{children}</main>
       </body>
     </html>
   );
