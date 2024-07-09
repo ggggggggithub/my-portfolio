@@ -7,6 +7,7 @@ import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
     if (isDarkMode) {
@@ -14,6 +15,35 @@ const Header = () => {
     } else {
       document.documentElement.classList.remove("dark");
     }
+
+    const handleScroll = () => {
+      const sections = ["info", "project"];
+      const scrollPosition = window.scrollY + 80; // Offset for fixed header height
+
+      let foundActiveSection = false;
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetHeight = element.offsetHeight;
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            setActiveSection(section);
+            foundActiveSection = true;
+          }
+        }
+      });
+
+      if (!foundActiveSection) {
+        setActiveSection("");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [isDarkMode]);
 
   const toggleTheme = () => {
@@ -24,6 +54,7 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(id);
     }
   };
 
@@ -33,13 +64,17 @@ const Header = () => {
       <nav className="flex space-x-4">
         <button
           onClick={() => scrollToSection("info")}
-          className="hover:underline"
+          className={`hover:underline ${
+            activeSection === "info" ? "underline text-red-500" : ""
+          }`}
         >
           Info
         </button>
         <button
           onClick={() => scrollToSection("project")}
-          className="hover:underline"
+          className={`hover:underline ${
+            activeSection === "project" ? "underline text-red-500" : ""
+          }`}
         >
           Project
         </button>

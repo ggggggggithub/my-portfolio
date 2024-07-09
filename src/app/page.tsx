@@ -12,8 +12,18 @@ export default function Home() {
           CSS.
         </p>
       </section>
-      <Info />
-      <Project />
+      <section
+        id="info"
+        className="min-h-screen bg-green-100 dark:bg-gray-700 text-black dark:text-white"
+      >
+        <Info />
+      </section>
+      <section
+        id="project"
+        className="min-h-screen bg-yellow-100 dark:bg-gray-600 text-black dark:text-white"
+      >
+        <Project />
+      </section>
     </div>
   );
 }
