@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 export default function Info() {
   return (
-    <section id="info" className="container mx-auto p-4">
+    <section id="info" className="container mx-auto p-4 px-40">
       <div className="mb-8">
         <h2 className="text-2xl font-bold mb-4">My Vision</h2>
         <p className="mb-4">
@@ -31,6 +34,20 @@ export default function Info() {
               </p>
               <p className="mb-2 text-lg">
                 <strong>Phone:</strong> +82-10-4908-1280
+              </p>
+              <p className="mb-2 text-lg">
+                <strong>address:</strong> 경기도 부천시
+              </p>
+              <p className="mb-2 text-lg">
+                <strong>github:</strong>{" "}
+                <a
+                  href="https://github.com/ggggggggithub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 text-black hover:underline"
+                >
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </a>
               </p>
             </div>
           </div>
