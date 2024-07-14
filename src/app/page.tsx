@@ -6,11 +6,10 @@ export default function Home() {
   return (
     <div>
       <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white px-8">
-        <h1 className="text-6xl font-bold mb-4">Welcome to My Portfolio</h1>
-        <p className="text-xl mb-4">
-          This is a simple portfolio website built with Next.js and Tailwind
-          CSS.
-        </p>
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+          <h1 className="text-xl mb-4 text-center">Hello, I am</h1>
+          <p className=" text-6xl font-bold mb-4 text-center">김성수</p>
+        </div>
       </section>
       <section
         id="info"
