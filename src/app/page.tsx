@@ -3,6 +3,8 @@ import Info from "./Components/Info";
 import Project from "./Components/Project";
 
 export default function Home() {
+  const study = ["React", "typescript", "tailwindCSS", "Redux"];
+
   return (
     <div>
       <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white px-8">
