@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply bg-white text-black;
-}
-
-html.dark {
-  @apply bg-gray-900 text-white;
+.dark {
+  background-color: #1a202c; /* Dark background color */
+  color: #ffffff; /* Light text color */
 }
 
 :root {
@@ -38,4 +35,36 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}
+
+.fade-in-right {
+  opacity: 0;
+  animation: slideInRight 1s forwards;
 }

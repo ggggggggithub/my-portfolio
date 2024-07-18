@@ -1,6 +1,7 @@
 import Header from "./Components/Header";
 import Info from "./Components/Info";
 import Project from "./Components/Project";
+import "../../styles/animations.css";
 
 export default function Home() {
   const study = ["React", "typescript", "tailwindCSS", "Redux"];
