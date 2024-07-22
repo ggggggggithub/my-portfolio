@@ -31,11 +31,7 @@
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15em solid black;
-  animation: typing 3.5s steps(40, end), blinkCaret 0.75s step-end infinite;
-}
-
-.typing.deleting {
-  animation: deleting 3.5s steps(40, end), blinkCaret 0.75s step-end infinite;
+  animation: blinkCaret 0.75s step-end infinite;
 }
 
 .slide-in-down {

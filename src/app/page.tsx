@@ -7,45 +7,46 @@ import Project from "./Components/Project";
 import "../../styles/animations.css";
 
 export default function Home() {
-  const study = ["React", "typescript", "tailwindCSS", "Redux"];
-  const [currentText, setCurrentText] = useState(study[0]);
+  const study = ["React", "TypeScript", "TailwindCSS", "Redux"];
+  const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
 
   useEffect(() => {
-    const changeText = () => {
-      if (isDeleting) {
+    const handleType = () => {
+      const fullText = study[loopNum % study.length];
+      setCurrentText(
+        isDeleting
+          ? fullText.substring(0, currentText.length - 1)
+          : fullText.substring(0, currentText.length + 1)
+      );
+
+      if (!isDeleting && currentText === fullText) {
+        setTimeout(() => setIsDeleting(true), 1000); // Wait for a while before starting to delete
+      } else if (isDeleting && currentText === "") {
         setIsDeleting(false);
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % study.length);
-      } else {
-        setIsDeleting(true);
+        setLoopNum(loopNum + 1);
+        setCurrentIndex((currentIndex + 1) % study.length);
       }
     };
 
-    const interval = setInterval(changeText, isDeleting ? 500 : 4000); // Change text every 4 seconds when typing, faster when deleting
-    return () => clearInterval(interval);
-  }, [isDeleting]);
+    const typingSpeed = isDeleting ? 100 : 200;
+    const timer = setTimeout(handleType, typingSpeed);
 
-  useEffect(() => {
-    if (!isDeleting) {
-      setCurrentText(study[currentIndex]);
-    }
-  }, [currentIndex, isDeleting]);
+    return () => clearTimeout(timer);
+  }, [currentText, isDeleting, loopNum]);
+
   return (
     <div>
       <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white px-8">
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
-          <h1 className="text-xl mb-4 text-center slide-in-down">
+          <h1 className="text-4xl mb-4 text-center tracking-widest slide-in-down">
             Hello, I am
           </h1>
-          <p className=" text-6xl font-bold mb-4 text-center">김성수</p>
+          <p className="text-6xl font-bold mb-4 text-center">김성수</p>
           <div className="text-2xl font-bold mb-4 text-center">
-            <span
-              key={currentText}
-              className={`typing ${isDeleting ? "deleting" : ""}`}
-            >
-              {currentText}
-            </span>
+            <span className="typing">{currentText}</span>
           </div>
         </div>
       </section>
