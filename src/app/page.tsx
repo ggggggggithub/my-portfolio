@@ -9,9 +9,9 @@ import "../../styles/animations.css";
 export default function Home() {
   const study = ["React", "TypeScript", "TailwindCSS", "Redux"];
   const [currentText, setCurrentText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(200);
 
   useEffect(() => {
     const handleType = () => {
@@ -23,31 +23,33 @@ export default function Home() {
       );
 
       if (!isDeleting && currentText === fullText) {
-        setTimeout(() => setIsDeleting(true), 1000); // Wait for a while before starting to delete
+        setTimeout(() => setIsDeleting(true), 500);
       } else if (isDeleting && currentText === "") {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
-        setCurrentIndex((currentIndex + 1) % study.length);
       }
+
+      const nextSpeed = isDeleting ? 50 : 150;
+      setTypingSpeed(nextSpeed);
     };
 
-    const typingSpeed = isDeleting ? 100 : 200;
-    const timer = setTimeout(handleType, typingSpeed);
-
+    const timer = setTimeout(() => handleType(), typingSpeed);
     return () => clearTimeout(timer);
-  }, [currentText, isDeleting, loopNum]);
+  }, [currentText, isDeleting, loopNum, typingSpeed, study]);
 
   return (
     <div>
       <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white px-8">
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-          <h1 className="text-4xl mb-4 text-center tracking-widest slide-in-down">
+        <div className="flex flex-col items-center justify-center min-h-screen py-2 relative">
+          <h1 className="text-4xl mb-4 text-center slide-in-down tracking-wider absolute top-1/3 transform -translate-y-1/2 whitespace-nowrap">
             Hello, I am
           </h1>
-          <p className="text-6xl font-bold mb-4 text-center">김성수</p>
-          <div className="text-2xl font-bold mb-4 text-center">
-            <span className="typing">{currentText}</span>
-          </div>
+          <p className="text-6xl font-bold mb-4 text-center absolute top-1/2 transform -translate-y-1/2 whitespace-nowrap">
+            김성수
+          </p>
+          <p className="text-4xl font-bold mb-4 text-center absolute top-2/3 transform -translate-y-1/2 whitespace-nowrap">
+            {currentText}
+          </p>
         </div>
       </section>
       <section
