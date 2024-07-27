@@ -38,16 +38,16 @@ export default function Home() {
   }, [currentText, isDeleting, loopNum, typingSpeed, study]);
 
   return (
-    <div>
-      <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white px-8">
-        <div className="flex flex-col items-center justify-center min-h-screen py-2 relative">
-          <h1 className="text-4xl mb-4 text-center slide-in-down tracking-wider absolute top-1/3 transform -translate-y-1/2 whitespace-nowrap">
+    <div className="px-8">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white">
+        <div className="flex flex-col items-center justify-center min-h-screen py-2 space-y-2 leading-none">
+          <h1 className="text-4xl md:text-6xl mb-1 text-center slide-in-down tracking-wider">
             Hello, I am
           </h1>
-          <p className="text-6xl font-bold mb-4 text-center absolute top-1/2 transform -translate-y-1/2 whitespace-nowrap">
+          <p className="text-6xl md:text-8xl font-bold mb-1 text-center">
             김성수
           </p>
-          <p className="text-4xl font-bold mb-4 text-center absolute top-2/3 transform -translate-y-1/2 whitespace-nowrap">
+          <p className="text-3xl md:text-4xl font-bold mb-1 text-center">
             {currentText}
           </p>
         </div>
