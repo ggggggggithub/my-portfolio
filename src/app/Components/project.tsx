@@ -17,7 +17,12 @@ export default function Project() {
       </div>
       <div className="project mb-8">
         <h1 className="text-4xl font-bold mb-4">펫칭</h1>
-        <p>About Project :</p>
+        <p>
+          <strong>About Project :</strong> 1. 반려동물을 맡아줄 펫시터 찾기
+          서비스
+          <br />
+          2. 자신의 펫을 자랑하며 다른 사람의 펫을 구경하는 커뮤니티 서비스
+        </p>
         <p>My Part :</p>
         <p>기술 스택 : Vue, TypeScript, Vuex, TailwindCSS</p>
       </div>
