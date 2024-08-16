@@ -54,7 +54,7 @@ export default function Project() {
           <br />
           2. 자신의 펫을 자랑하며 다른 사람의 펫을 구경하는 커뮤니티 서비스
         </p>
-        <p>기술 스택 : Vue, TypeScript, Vuex, TailwindCSS</p>
+        <p>기술 스택 : React Native, TypeScript, TailwindCSS</p>
       </div>
     </section>
   );
