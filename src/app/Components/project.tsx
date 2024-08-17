@@ -17,13 +17,22 @@ export default function Project() {
           />
           [도와조약] 사용자 알러지 기반 알약 추천 웹 서비스
           <a
-            href="https://github.com"
+            href="https://github.com/codestates-seb/seb43_main_009"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4 bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
-            style={{ fontSize: "1rem" }} // 버튼 글꼴 크기 조정
+            style={{ fontSize: "1rem" }}
           >
             GitHub
+          </a>
+          <a
+            href="https://dowajoyak.store/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+            style={{ fontSize: "1rem" }}
+          >
+            Link
           </a>
         </h1>
         <p>
@@ -47,6 +56,24 @@ export default function Project() {
             style={{ fontSize: "1.5rem" }}
           />
           펫칭
+          <a
+            href="https://github.com/Petching/Petching"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+            style={{ fontSize: "1rem" }}
+          >
+            GitHub
+          </a>
+          <a
+            href="https://petching.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+            style={{ fontSize: "1rem" }}
+          >
+            Link
+          </a>
         </h1>
         <p>
           <strong>About Project :</strong> 1. 반려동물을 맡아줄 펫시터 찾기
@@ -54,7 +81,7 @@ export default function Project() {
           <br />
           2. 자신의 펫을 자랑하며 다른 사람의 펫을 구경하는 커뮤니티 서비스
         </p>
-        <p>기술 스택 : React Native, TypeScript, TailwindCSS</p>
+        <p>기술 스택 : React, TypeScript, Zustand, tailwind-CSS</p>
       </div>
     </section>
   );

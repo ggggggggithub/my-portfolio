@@ -38,8 +38,8 @@ export default function Home() {
   }, [currentText, isDeleting, loopNum, typingSpeed, study]);
 
   return (
-    <div className="px-8">
-      <section className="min-h-screen flex flex-col justify-center items-center bg-blue-100 dark:bg-gray-800 text-black dark:text-white">
+    <div className="px-8 bg-white dark:bg-gray-800">
+      <section className="min-h-screen flex flex-col justify-center items-center text-black dark:text-white">
         <div className="flex flex-col items-center justify-center min-h-screen py-2 space-y-2 leading-none">
           <h1 className="text-4xl md:text-6xl mb-1 text-center slide-in-down-fixed tracking-wider">
             Hello! I am
@@ -57,16 +57,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        id="info"
-        className="min-h-screen bg-green-100 dark:bg-gray-700 text-black dark:text-white"
-      >
+      <section id="info" className="min-h-screen text-black dark:text-white">
         <Info />
       </section>
-      <section
-        id="project"
-        className="min-h-screen bg-yellow-100 dark:bg-gray-600 text-black dark:text-white"
-      >
+      <section id="project" className="min-h-screen text-black dark:text-white">
         <Project />
       </section>
     </div>

@@ -26,9 +26,6 @@ export default function Info() {
                 <strong>Phone:</strong> +82-10-4908-1280
               </p>
               <p className="mb-2 text-lg">
-                <strong>address:</strong> 경기도 부천시
-              </p>
-              <p className="mb-2 text-lg">
                 <strong>github:</strong>{" "}
                 <a
                   href="https://github.com/ggggggggithub"
