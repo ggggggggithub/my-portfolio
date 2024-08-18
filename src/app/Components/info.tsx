@@ -50,6 +50,7 @@ export default function Info() {
           있도록 만드는 것이 저의 목표입니다.
         </p>
       </div>
+      <div>skill</div>
     </section>
   );
 }
