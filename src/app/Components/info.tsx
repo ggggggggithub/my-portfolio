@@ -1,7 +1,48 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
+import { Bar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 export default function Info() {
+  const data = {
+    labels: ["React", "TypeScript", "TailwindCSS", "Redux"],
+    datasets: [
+      {
+        label: "Skill Level",
+        data: [80, 70, 90, 60], // 각 기술에 대한 데이터를 여기에 입력합니다.
+        backgroundColor: "rgba(75, 192, 192, 0.6)",
+        borderColor: "rgba(75, 192, 192, 1)",
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const options = {
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100,
+      },
+    },
+  };
   return (
     <section id="info" className="container mx-auto p-4 px-40">
       <div className="flex flex-col md:flex-row items-center">
@@ -51,6 +92,7 @@ export default function Info() {
         </p>
       </div>
       <div>skill</div>
+      <Bar data={data} options={options} />
     </section>
   );
 }
