@@ -26,10 +26,19 @@ export default function Info() {
     labels: ["React", "TypeScript", "TailwindCSS", "Redux"],
     datasets: [
       {
-        label: "Skill Level",
         data: [80, 70, 90, 60], // 각 기술에 대한 데이터를 여기에 입력합니다.
-        backgroundColor: "rgba(75, 192, 192, 0.6)",
-        borderColor: "rgba(75, 192, 192, 1)",
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.6)", // 첫 번째 막대 색상
+          "rgba(54, 162, 235, 0.6)", // 두 번째 막대 색상
+          "rgba(255, 206, 86, 0.6)", // 세 번째 막대 색상
+          "rgba(75, 192, 192, 0.6)", // 네 번째 막대 색상
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)", // 첫 번째 막대 테두리 색상
+          "rgba(54, 162, 235, 1)", // 두 번째 막대 테두리 색상
+          "rgba(255, 206, 86, 1)", // 세 번째 막대 테두리 색상
+          "rgba(75, 192, 192, 1)", // 네 번째 막대 테두리 색상
+        ],
         borderWidth: 1,
       },
     ],
@@ -39,7 +48,12 @@ export default function Info() {
     scales: {
       y: {
         beginAtZero: true,
-        max: 100,
+        max: 100, // y 축의 최대 값을 90으로 설정합니다.
+      },
+    },
+    plugins: {
+      legend: {
+        display: false, // 범례를 숨깁니다.
       },
     },
   };
@@ -91,8 +105,10 @@ export default function Info() {
           있도록 만드는 것이 저의 목표입니다.
         </p>
       </div>
-      <div>skill</div>
-      <Bar data={data} options={options} />
+      <div className="mb-8 mt-20">
+        <h2 className="text-2xl font-bold mb-4">Skill</h2>
+        <Bar data={data} options={options} />
+      </div>
     </section>
   );
 }
