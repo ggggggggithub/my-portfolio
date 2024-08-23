@@ -12,19 +12,17 @@ export default function Project() {
         <div className="flex items-start space-x-2">
           <FontAwesomeIcon
             icon={faLightbulb}
-            className="text-yellow-500"
+            className="text-yellow-500 mt-1.5"
             style={{ fontSize: "1.5rem" }}
           />
           <div>
             <h1 className="text-2xl font-bold">
               [도와조약] 사용자 알러지 기반 알약 추천 웹 서비스
-            </h1>
-            <div className="flex space-x-4">
               <a
                 href="https://github.com/codestates-seb/seb43_main_009"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+                className="bg-gray-800 text-white rounded-full px-4 ml-4 py-2 text-sm hover:bg-gray-700 transition"
                 style={{ fontSize: "1rem" }}
               >
                 GitHub
@@ -33,12 +31,12 @@ export default function Project() {
                 href="https://dowajoyak.store/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+                className="bg-gray-800 text-white rounded-full px-4 ml-4 py-2 text-sm hover:bg-gray-700 transition"
                 style={{ fontSize: "1rem" }}
               >
                 Link
               </a>
-            </div>
+            </h1>
             <p className="mt-4">
               <strong>About Project :</strong> 1. 설문조사를 통해 자신에게
               부족한 영양소를 확인, 그에 맞는 영양제를 추천하는 서비스 <br />
@@ -58,17 +56,17 @@ export default function Project() {
         <div className="flex items-start space-x-2">
           <FontAwesomeIcon
             icon={faLightbulb}
-            className="text-yellow-500"
+            className="text-yellow-500 mt-1.5"
             style={{ fontSize: "1.5rem" }}
           />
           <div>
-            <h1 className="text-2xl font-bold">펫칭</h1>
-            <div className="flex space-x-4">
+            <h1 className="text-2xl font-bold">
+              펫칭
               <a
                 href="https://github.com/Petching/Petching"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+                className="bg-gray-800 text-white rounded-full ml-4 px-4 py-2 text-sm hover:bg-gray-700 transition"
                 style={{ fontSize: "1rem" }}
               >
                 GitHub
@@ -77,12 +75,12 @@ export default function Project() {
                 href="https://petching.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white rounded-full px-4 py-2 text-sm hover:bg-gray-700 transition"
+                className="bg-gray-800 text-white rounded-full ml-4 px-4 py-2 text-sm hover:bg-gray-700 transition"
                 style={{ fontSize: "1rem" }}
               >
                 Link
               </a>
-            </div>
+            </h1>
             <p className="mt-4">
               <strong>About Project :</strong> 1. 반려동물을 맡아줄 펫시터 찾기
               서비스
