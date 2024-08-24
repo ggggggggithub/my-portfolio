@@ -61,10 +61,10 @@ const Header = () => {
   return (
     <header className="bg-blue-600 dark:bg-gray-900 text-white dark:text-gray-300 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 px-40">
       <h1 className="text-2xl font-bold">KimSeoungSu</h1>
-      <nav className="flex space-x-4">
+      <nav className="flex space-x-6 ">
         <button
           onClick={() => scrollToSection("info")}
-          className={`hover:underline ${
+          className={`text-lg ml-20 hover:underline ${
             activeSection === "info" ? "underline text-red-500" : ""
           }`}
         >
@@ -72,7 +72,7 @@ const Header = () => {
         </button>
         <button
           onClick={() => scrollToSection("project")}
-          className={`hover:underline ${
+          className={`text-lg hover:underline ${
             activeSection === "project" ? "underline text-red-500" : ""
           }`}
         >

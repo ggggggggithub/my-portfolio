@@ -15,11 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
         <Header />
-        <main className="pt-16">
-          {" "}
-          {/* Padding to offset fixed header */}
-          {children}
-        </main>
+        <main className="pt-16"> {children}</main>
       </body>
     </html>
   );
