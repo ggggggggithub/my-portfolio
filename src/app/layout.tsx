@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "../app/Components/Header";
+import Footer from "./Components/Footer";
 
 export const metadata = {
   title: "My Portfolio",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
         <Header />
         <main className="pt-16"> {children}</main>
+        <Footer />
       </body>
     </html>
   );
