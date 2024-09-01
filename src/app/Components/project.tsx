@@ -22,7 +22,7 @@ export default function Project() {
                 href="https://github.com/codestates-seb/seb43_main_009"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 dark:bg-gray-100 text-white dark:text-black rounded-full px-4 ml-4 py-2 text-sm hover:bg-gray-700 dark:hover:bg-gray-200 transition"
+                className="bg-blue-600 text-white dark:text-black rounded-full px-4 ml-4 py-2 text-sm hover:bg-gray-700 dark:hover:bg-gray-200 transition"
                 style={{ fontSize: "1rem" }}
               >
                 GitHub
@@ -31,7 +31,7 @@ export default function Project() {
                 href="https://dowajoyak.store/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white rounded-full px-4 ml-4 py-2 text-sm hover:bg-gray-700 transition"
+                className="bg-blue-600 text-white rounded-full px-4 ml-4 py-2 text-sm hover:bg-gray-700 transition"
                 style={{ fontSize: "1rem" }}
               >
                 Link
@@ -66,7 +66,7 @@ export default function Project() {
                 href="https://github.com/Petching/Petching"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-800 text-white rounded-full ml-4 px-4 py-2 text-sm hover:bg-gray-700 transition"
+                className="bg-gray-800 dark:bg-white dark:text-black text-white rounded-full ml-4 px-4 py-2 text-sm hover:bg-gray-700 transition"
                 style={{ fontSize: "1rem" }}
               >
                 GitHub
