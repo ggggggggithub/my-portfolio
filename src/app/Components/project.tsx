@@ -5,7 +5,7 @@ export default function Project() {
   return (
     <section id="project" className="container mx-auto p-4 mt-8 px-40">
       <div className="project mb-8">
-        <h1 className="text-4xl font-bold mb-4">-Project</h1>
+        <h1 className="text-4xl font-bold mb-4 text-red-300">Project</h1>
       </div>
 
       <div className="project mb-8">
