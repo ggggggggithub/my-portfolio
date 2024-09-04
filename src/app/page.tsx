@@ -57,10 +57,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="info" className="min-h-screen text-black dark:text-white">
+      <section
+        id="info"
+        className="min-h-screen text-black scroll-mt-24 dark:text-white"
+      >
         <Info />
       </section>
-      <section id="project" className="min-h-screen text-black dark:text-white">
+      <section
+        id="project"
+        className="min-h-screen text-black scroll-mt-24 dark:text-white"
+      >
         <Project />
       </section>
     </div>

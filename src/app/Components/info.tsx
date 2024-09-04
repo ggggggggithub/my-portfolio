@@ -98,7 +98,7 @@ export default function Info() {
         </div>
       </div>
       <div className="mb-8 mt-20">
-        <h2 className="text-2xl font-bold mb-4">My Vision</h2>
+        <h2 className="text-2xl font-bold mb-4 text-green-400">My Vision</h2>
         <p className="mb-4">
           저는 웹 애플리케이션을 사용할 때, CSS가 아무리 깔끔해도 인터페이스
           조작이 불편하면 CSS의 장점이 모두 사라진다고 생각합니다. 이러한 생각을
