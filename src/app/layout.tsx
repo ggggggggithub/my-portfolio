@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
         <Header />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <main className="pt-16"> {children}</main>
         <Footer />
       </body>
