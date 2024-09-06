@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html>
       <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
         <Header />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
