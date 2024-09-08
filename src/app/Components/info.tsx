@@ -1,64 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import { Bar } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from "chart.js";
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
 
 export default function Info() {
-  const data = {
-    labels: ["React", "TypeScript", "TailwindCSS", "Redux", "CSS3"],
-    datasets: [
-      {
-        data: [80, 70, 90, 60, 50],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.6)",
-          "rgba(54, 162, 235, 0.6)",
-          "rgba(255, 206, 86, 0.6)",
-          "rgba(75, 192, 192, 0.6)",
-          "rgba(28, 66, 255, 0.6)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(28, 66, 255, 0.6)",
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
-
-  const options = {
-    scales: {
-      y: {
-        beginAtZero: true,
-        max: 100,
-      },
-    },
-    plugins: {
-      legend: {
-        display: false, // 범례를 숨깁니다.
-      },
-    },
-  };
   return (
     <section id="info" className="container mx-auto p-4 px-40">
       <div className="flex flex-col md:flex-row items-center">
@@ -109,7 +53,6 @@ export default function Info() {
       </div>
       <div className="mb-8 mt-20">
         <h2 className="text-2xl font-bold mb-4">Skill</h2>
-        <Bar data={data} options={options} />
       </div>
     </section>
   );
