@@ -52,7 +52,20 @@ export default function Info() {
         </p>
       </div>
       <div className="mb-8 mt-20">
-        <h2 className="text-2xl font-bold mb-4">Skill</h2>
+        <h2 className="text-4xl font-bold mb-4">Skill</h2>
+        <div className="project mb-8">
+          <h3 className="text-2xl font-bold">ReactJS</h3>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>Redux, Zustand를 사용하여 전역 상태관리를 할 수 있습니다.</li>
+            <li>함수형 컴포넌트 문법에 익숙합니다.</li>
+          </ul>
+        </div>
+        <div className="project mb-8">
+          <h3 className="text-2xl font-bold">JavaScript</h3>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>es6 자바스크립트 문법을 사용합니다.</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
