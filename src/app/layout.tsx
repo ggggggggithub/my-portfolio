@@ -1,11 +1,16 @@
 import "./globals.css";
 import Header from "../app/Components/Header";
 import Footer from "./Components/Footer";
+import { Montserrat } from "next/font/google";
 
 export const metadata = {
   title: "My Portfolio",
   description: "My portfolio website built with Next.js and Tailwind CSS",
 };
+
+const montserrat = Montserrat({
+  subsets: ["latin"], // 폰트에 포함될 언어의 서브셋
+});
 
 export default function RootLayout({
   children,
@@ -14,9 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
+      <body
+        className={`${montserrat.className} bg-white dark:bg-gray-800 text-black dark:text-white`}
+      >
         <Header />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <main className="pt-16"> {children}</main>
         <Footer />
       </body>

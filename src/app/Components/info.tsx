@@ -66,6 +66,18 @@ export default function Info() {
             <li>es6 자바스크립트 문법을 사용합니다.</li>
           </ul>
         </div>
+        <div className="project mb-8">
+          <h3 className="text-2xl font-bold">CSS</h3>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>tailwindCSS를 사용할 수 있습니다.</li>
+          </ul>
+        </div>
+        <div className="project mb-8">
+          <h3 className="text-2xl font-bold">HTML</h3>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>시멘틱 마크업 작업이 가능합니다.</li>
+          </ul>
+        </div>
       </div>
     </section>
   );
