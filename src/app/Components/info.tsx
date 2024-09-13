@@ -70,12 +70,31 @@ export default function Info() {
           <h3 className="text-2xl font-bold">CSS</h3>
           <ul className="mt-4 list-disc list-inside space-y-2">
             <li>tailwindCSS를 사용할 수 있습니다.</li>
+            <li>
+              반응형 웹 디자인을 구현하고, 다양한 화면 크기에서 일관된 사용자
+              경험을 제공할 수 있습니다.
+            </li>
           </ul>
         </div>
         <div className="project mb-8">
           <h3 className="text-2xl font-bold">HTML</h3>
           <ul className="mt-4 list-disc list-inside space-y-2">
             <li>시멘틱 마크업 작업이 가능합니다.</li>
+          </ul>
+        </div>
+        <div className="project mb-8">
+          <h3 className="text-2xl font-bold">Git & Github</h3>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>Git을 사용하여 프로젝트 관리를 합니다.</li>
+          </ul>
+        </div>
+        <div className="project mb-8">
+          <h3 className="text-2xl font-bold">ETC</h3>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>
+              Axios - 서버와의 비동기 통신을 구현하고, GET/POST 요청 및 에러
+              처리를 할 수 있습니다.
+            </li>
           </ul>
         </div>
       </div>
