@@ -7,7 +7,7 @@ import Project from "./Components/Project";
 import "../../styles/animations.css";
 
 export default function Home() {
-  const study = ["React", "TypeScript", "TailwindCSS", "Redux"];
+  const study = ["React", "TypeScript", "TailwindCSS", "NextJS"];
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);

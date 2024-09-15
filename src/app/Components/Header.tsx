@@ -18,7 +18,7 @@ const Header = () => {
 
     const handleScroll = () => {
       const sections = ["info", "project"];
-      const scrollPosition = window.scrollY + 80; // Offset for fixed header height
+      const scrollPosition = window.scrollY + 80;
 
       let foundActiveSection = false;
 
@@ -64,16 +64,20 @@ const Header = () => {
       <nav className="flex space-x-10 ">
         <button
           onClick={() => scrollToSection("info")}
-          className={`text-lg ml-20 hover:underline ${
-            activeSection === "info" ? "underline text-red-500" : ""
+          className={`text-lg ml-20 ${
+            activeSection === "info"
+              ? "animate-border border-4 border-red-500"
+              : ""
           }`}
         >
           Info
         </button>
         <button
           onClick={() => scrollToSection("project")}
-          className={`text-lg hover:underline ${
-            activeSection === "project" ? "underline text-red-500" : ""
+          className={`text-lg ${
+            activeSection === "project"
+              ? "animate-border border-4 border-red-500"
+              : ""
           }`}
         >
           Project
