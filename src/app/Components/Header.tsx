@@ -59,27 +59,16 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-blue-600 dark:bg-gray-900 text-white dark:text-gray-300 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 px-32">
-      <h1 className="text-2xl font-bold">KimSeoungSu</h1>
+    <header className="bg-blue-500 dark:bg-gray-900 text-white dark:text-gray-300 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 px-32">
+      <h1 className="text-2xl font-bold">Kim Seong Su</h1>
       <nav className="flex space-x-10 ">
         <button
           onClick={() => scrollToSection("info")}
-          className={`text-lg ml-20 ${
-            activeSection === "info"
-              ? "animate-border border-4 border-red-500"
-              : ""
-          }`}
+          className="text-lg ml-20"
         >
           Info
         </button>
-        <button
-          onClick={() => scrollToSection("project")}
-          className={`text-lg ${
-            activeSection === "project"
-              ? "animate-border border-4 border-red-500"
-              : ""
-          }`}
-        >
+        <button onClick={() => scrollToSection("project")} className="text-lg">
           Project
         </button>
         <button

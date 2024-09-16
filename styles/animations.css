@@ -38,16 +38,3 @@
     border-color: black;
   }
 }
-
-@keyframes border-animate {
-  0% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: red;
-  }
-}
-
-.animate-border {
-  animation: border-animate 2s forwards; /* 애니메이션 시간 2초로 변경 */
-}
