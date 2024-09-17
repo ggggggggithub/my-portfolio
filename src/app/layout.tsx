@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 const montserrat = Montserrat({
-  subsets: ["latin"], // 폰트에 포함될 언어의 서브셋
+  subsets: ["latin"],
 });
 
 export default function RootLayout({

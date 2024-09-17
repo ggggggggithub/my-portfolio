@@ -12,8 +12,7 @@ export default function Project() {
         <div className="flex items-start space-x-2">
           <FontAwesomeIcon
             icon={faLightbulb}
-            className="text-yellow-500 mt-1.5"
-            style={{ fontSize: "1.5rem" }}
+            className="text-yellow-500 mt-1.5 text-xl"
           />
           <div>
             <h1 className="text-2xl font-bold">
@@ -56,8 +55,7 @@ export default function Project() {
         <div className="flex items-start space-x-2">
           <FontAwesomeIcon
             icon={faLightbulb}
-            className="text-yellow-500 mt-1.5"
-            style={{ fontSize: "1.5rem" }}
+            className="text-yellow-500 text-xl"
           />
           <div>
             <h1 className="text-2xl font-bold">

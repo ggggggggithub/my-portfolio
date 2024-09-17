@@ -34,7 +34,10 @@ export default function Info() {
                   rel="noopener noreferrer"
                   className="ml-2 text-black hover:underline"
                 >
-                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-xl transition-none"
+                  />
                 </a>
               </p>
             </div>
