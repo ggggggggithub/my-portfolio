@@ -36,7 +36,7 @@ export default function Info() {
                 >
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="text-xl transition-none"
+                    className="text-2xl transition-none"
                   />
                 </a>
               </p>
