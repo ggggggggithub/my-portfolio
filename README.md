@@ -1,5 +1,10 @@
 #Portfolio
 
 ##Stack
-TypeScript
-Tailwind-CSS
+
+- NextJS
+- TypeScript
+- Tailwind-CSS
+
+##Contact
+hamtoli5@gmail.com
