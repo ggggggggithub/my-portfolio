@@ -44,6 +44,8 @@ export default function Project() {
             </p>
             <p>
               <strong>My Part :</strong>-커뮤니티 전체 글 조회 페이지 <br />
+              -Axios를 사용해 서버에 있는 데이터를 불러옵니다. <br />
+              -Redux를 사용해 상태관리를 진행합니다. <br />
               -약 검색시 조회되는 약 목록 페이지
             </p>
             <p>기술 스택 : React, JavaScript, Redux, Styled-Component</p>
