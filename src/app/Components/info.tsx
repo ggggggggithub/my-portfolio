@@ -73,6 +73,7 @@ export default function Info() {
           <h3 className="text-2xl font-bold">CSS</h3>
           <ul className="mt-4 list-disc list-inside space-y-2">
             <li>tailwindCSS를 사용할 수 있습니다.</li>
+            <li>styled-component를 사용할 수 있습니다.</li>
             <li>
               반응형 웹 디자인을 구현하고, 다양한 화면 크기에서 일관된 사용자
               경험을 제공할 수 있습니다.
