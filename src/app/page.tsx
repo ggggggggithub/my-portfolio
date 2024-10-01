@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Info from "./Components/Info";
-import Project from "@/Components/Project";
+import Info from "./Info";
+import Project from "./Components/Project";
 import "../../styles/animations.css";
 
 export default function Home() {
