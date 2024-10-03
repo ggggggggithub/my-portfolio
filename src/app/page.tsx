@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Info from "./Info";
-import Project from "./Components/Project";
+import Project from "./Project";
 import "../../styles/animations.css";
 
 export default function Home() {
