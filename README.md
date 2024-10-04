@@ -10,4 +10,6 @@
 
 hamtoli5@gmail.com
 
-## [link] (https://ggggggggithub.github.io/my-portfolio/)
+## [link][def]
+
+[def]: https://ggggggggithub.github.io/my-portfolio/
