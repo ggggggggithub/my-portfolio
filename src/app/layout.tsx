@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "../app/Components/Header";
-import Footer from "./Components/Footer";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 import { Montserrat } from "next/font/google";
 
 export const metadata = {
