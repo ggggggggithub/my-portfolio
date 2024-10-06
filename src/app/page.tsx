@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Info from "./Info";
+import Info from "./component/Info";
 import Project from "./component/Project";
 import "../../styles/animations.css";
 
