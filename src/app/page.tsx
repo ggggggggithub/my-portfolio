@@ -37,20 +37,20 @@ export default function Home() {
   }, [currentText, isDeleting, loopNum, typingSpeed, study]);
 
   return (
-    <div className="px-8 bg-white dark:bg-gray-800">
+    <div className="px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-800">
       <section className="min-h-screen flex flex-col justify-center items-center text-black dark:text-white">
         <div className="flex flex-col items-center justify-center min-h-screen py-2 space-y-2 leading-none">
-          <h1 className="text-4xl md:text-6xl mb-1 text-center slide-in-down-fixed tracking-wider">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl mb-1 text-center slide-in-down-fixed tracking-wider">
             Hello! I am
           </h1>
-          <p className="text-6xl md:text-8xl font-bold mb-1 text-center">
+          <p className="text-5xl md:text-7xl lg:text-8xl font-bold mb-1 text-center">
             김성수
           </p>
-          <div className="h-16 md:h-20 flex items-center">
-            <p className="text-3xl md:text-4xl font-bold mb-1 text-center">
+          <div className="h-14 md:h-18 lg:h-20 flex items-center">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-1 text-center">
               {currentText}
             </p>
-            <p className="text-3xl md:text-4xl font-bold mb-1 text-center">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-1 text-center">
               를 공부하는
             </p>
           </div>
