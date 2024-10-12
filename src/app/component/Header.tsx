@@ -59,25 +59,28 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-blue-500 dark:bg-gray-900 text-white dark:text-gray-300 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 px-32">
-      <h1 className="text-2xl font-bold">Kim Seong Su</h1>
-      <nav className="flex space-x-10 ">
+    <header className="bg-blue-500 dark:bg-gray-900 text-white dark:text-gray-300 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 px-4 md:px-32">
+      <h1 className="text-lg md:text-2xl font-bold">Kim Seong Su</h1>
+      <nav className="flex space-x-4 md:space-x-10">
         <button
           onClick={() => scrollToSection("info")}
-          className="text-lg ml-20"
+          className="text-base md:text-lg"
         >
           Info
         </button>
-        <button onClick={() => scrollToSection("project")} className="text-lg">
+        <button
+          onClick={() => scrollToSection("project")}
+          className="text-base md:text-lg"
+        >
           Project
         </button>
         <button
           onClick={toggleTheme}
-          className="bg-gray-800 dark:bg-gray-300 dark:text-black text-white px-4 py-2 rounded flex items-center justify-center"
+          className="bg-gray-800 dark:bg-gray-300 dark:text-black text-white px-2 py-1 md:px-4 md:py-2 rounded flex items-center justify-center"
         >
           <FontAwesomeIcon
             icon={isDarkMode ? faSun : faMoon}
-            className="w-5 h-5"
+            className="w-4 h-4 md:w-5 md:h-5"
           />
         </button>
       </nav>
