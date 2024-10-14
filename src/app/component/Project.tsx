@@ -89,7 +89,9 @@ export default function Project() {
               서비스
               <br />
               2. 자신의 펫을 자랑하며 다른 사람의 펫을 구경하는 커뮤니티 서비스
+              <br />- Zustand를 사용해 상태관리를 진행합니다.
             </p>
+
             <p className="mt-2 text-sm md:text-base">
               기술 스택 : React, TypeScript, Zustand, Tailwind-CSS
             </p>
