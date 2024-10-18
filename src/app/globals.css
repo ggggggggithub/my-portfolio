@@ -43,3 +43,12 @@ body {
     format("woff2");
   font-display: swap;
 }
+
+@media print {
+  header {
+    background-color: #1e3a8a;
+  }
+  footer {
+    background-color: #06bdaf;
+  }
+}
