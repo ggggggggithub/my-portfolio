@@ -69,9 +69,11 @@ export default function Info() {
           </ul>
         </div>
         <div className="project mb-8">
-          <h3 className="text-xl md:text-2xl font-bold">JavaScript</h3>
+          <h3 className="text-xl md:text-2xl font-bold">
+            JavaScript, TypeScript
+          </h3>
           <ul className="mt-4 list-disc list-inside space-y-2">
-            <li>es6 자바스크립트 문법을 사용합니다.</li>
+            <li>es6 자바스크립트 문법에 익숙합니다.</li>
           </ul>
         </div>
         <div className="project mb-8">
