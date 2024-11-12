@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
+
 export default function Info() {
   return (
     <section id="info" className="container mx-auto p-4 px-4 md:px-40">
       <div className="flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/3 mb-4 md:mb-0 flex justify-center">
           <img
-            src="/su.jpeg"
+            src="/my-portfolio/su.jpeg"
             alt="Your Photo"
             className="rounded-lg shadow-lg max-w-full h-auto"
           />
