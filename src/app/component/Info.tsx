@@ -110,6 +110,62 @@ export default function Info() {
           </ul>
         </div>
       </div>
+      <div className="mb-8 mt-12 md:mt-20">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 text-pink-300">
+          Experience
+        </h2>
+        <h1 className="text-xl md:text-2xl font-bold mb-4">
+          미래내일인턴십 (2024.11.25 ~ 2025.01.17)
+        </h1>
+        <p className="mt-4 text-sm md:text-base">
+        미래내일인턴십 프로그램으로 주식회사 해든앰앤씨에서 8주간 IT팀 인턴으로 프론트업무 진행
+            </p>
+            <p className="mt-2 text-sm md:text-base">
+              <h2 className="text-xl md:text-xl font-bold mb-2">My result</h2>
+       
+              <strong>1. 해든앰앤씨 홈페이지 제작</strong>
+              <br /> (1) 은공예 페이지 제작 
+               <a
+                href="https://www.headen.co.kr/craft"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 dark:bg-white dark:text-black text-white rounded-full ml-2 px-1 md:px-41 py-1 text-[8px] md:text-[12px] hover:bg-gray-700 transition"
+              >
+                Link
+              </a>
+              <br/> (2) R&D 연구소개 페이지 제작
+              <a
+                href="https://www.headen.co.kr/RND"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 dark:bg-white dark:text-black text-white rounded-full ml-2 px-1 md:px-41 py-1 text-[8px] md:text-[12px] hover:bg-gray-700 transition"
+              >
+                Link
+              </a>
+              <p className="mt-2 text-sm md:text-base">
+              기술 스택 : EJS, CSS
+            </p>
+
+              <br className="mb-4" />
+              <span className="flex items-center mt-6">
+  <strong className="mr-2">2. 다량플레이스 리뉴얼</strong>
+  <a
+    href="https://daryang.co.kr/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gray-800 dark:bg-white dark:text-black text-white rounded-full px-1 md:px-41  text-[8px] md:text-[12px] hover:bg-gray-700 transition"
+  >
+    Link
+  </a>
+
+</span>
+ (1) 배송조회 부분 - api를 연동해 데이터를 가져와 화면에 나타내는 페이지
+ <br /> (2) 내 요청서 페이지 부분 - api를 연동해 데이터를 가져와 화면에 나타내는 페이지
+ <p className="mt-2 text-sm md:text-base">
+              기술 스택 : EJS, CSS
+            </p>
+            </p>
+      </div>
     </section>
   );
 }
